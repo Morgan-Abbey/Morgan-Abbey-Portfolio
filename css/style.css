@@ -12,12 +12,13 @@ body {
   margin: 0;
 }
 
-/* parallax "viewport" */
+body {
+  margin: 0;
+}
+
 .parallax {
   height: 100vh;
-
   overflow-x: hidden;
-  overflow-y: auto;
 
   perspective: 1px;
 }
@@ -40,4 +41,35 @@ body {
 
 .layer3 {
   transform: translateZ(-2px);
+}
+
+/* specific to this implementation */
+div {
+  font-size: 50px;
+  text-align: center;
+}
+
+.parallax-layer.layer1 {
+  width: 100%;
+  height: 100rem;
+
+  background-color: red;
+}
+
+.parallax-layer.layer2 {
+  top: 10rem;
+
+  width: 100%;
+  height: 50rem;
+
+  background-color: green;
+}
+
+.parallax-layer.layer3 {
+  top: 20rem;
+
+  width: 100%;
+  height: 50rem;
+
+  background-color: blue;
 }
